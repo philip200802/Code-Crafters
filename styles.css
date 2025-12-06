@@ -1,0 +1,576 @@
+/* ==================== Global Styles ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+/* ==================== Text Utilities ==================== */
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.text-white-75 {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+/* ==================== Scrollbar Styling ==================== */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0e27;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff4757;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ff5f7d;
+}
+
+/* ==================== Navigation Bar ==================== */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 1rem 0;
+}
+
+.navbar-brand:hover {
+    color: #ff5f7d !important;
+    transition: all 0.3s ease;
+}
+
+.nav-link {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ff4757;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 71, 87, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ==================== Hero Section ==================== */
+#home {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0f1424 100%) !important;
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(255, 71, 87, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(100, 200, 255, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 40% 20%, rgba(255, 100, 150, 0.07) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px) translateX(0px);
+    }
+    25% {
+        transform: translateY(-40px) translateX(20px);
+    }
+    50% {
+        transform: translateY(-60px) translateX(-20px);
+    }
+    75% {
+        transform: translateY(-30px) translateX(10px);
+    }
+}
+
+@keyframes float-slow {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-40px);
+    }
+}
+
+@keyframes glow {
+    0%, 100% {
+        filter: drop-shadow(0 0 20px rgba(255, 71, 87, 0.5));
+    }
+    50% {
+        filter: drop-shadow(0 0 40px rgba(255, 71, 87, 0.8));
+    }
+}
+
+#home h1 {
+    position: relative;
+    z-index: 1;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+#home h2 {
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(135deg, #ff4757 0%, #ff5f7d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+#home p {
+    position: relative;
+    z-index: 1;
+}
+
+/* ==================== Section Styling ==================== */
+section {
+    position: relative;
+    padding: 4rem 0;
+}
+
+section h2 {
+    position: relative;
+    display: inline-block;
+}
+
+/* ==================== Button Styles ==================== */
+.btn {
+    padding: 0.6rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-danger {
+    background-color: #ff4757 !important;
+}
+
+.btn-danger:hover {
+    background-color: #ff5f7d !important;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(255, 71, 87, 0.3);
+}
+
+.btn-outline-light:hover {
+    background-color: #ff4757 !important;
+    color: white !important;
+    border-color: #ff4757 !important;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(255, 71, 87, 0.3);
+}
+
+/* ==================== Card Styles ==================== */
+.card {
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.skill-card,
+.service-card,
+.project-card {
+    cursor: pointer;
+}
+
+.skill-card:hover,
+.service-card:hover,
+.project-card:hover {
+    transform: translateY(-10px) !important;
+    box-shadow: 0 20px 40px rgba(255, 71, 87, 0.2) !important;
+}
+
+/* ==================== Skill Bar Styles ==================== */
+.skill-bar {
+    width: 0%;
+    background-color: #ff4757;
+    transition: width 1.5s ease-out;
+}
+
+/* ==================== About Section ==================== */
+#about img {
+    box-shadow: 0 10px 40px rgba(255, 71, 87, 0.2);
+    transition: all 0.3s ease;
+}
+
+#about img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 50px rgba(255, 71, 87, 0.3);
+}
+
+/* ==================== Form Styles ==================== */
+.form-control {
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    background-color: #232a48 !important;
+    border-color: #ff4757 !important;
+    box-shadow: 0 0 0 0.2rem rgba(255, 71, 87, 0.25);
+    color: white;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.form-label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+/* ==================== Social Links ==================== */
+.social-link {
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    transform: scale(1.1);
+}
+
+/* ==================== Responsive Design ==================== */
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 2rem !important;
+    }
+
+    #home h2 {
+        font-size: 1.5rem !important;
+    }
+
+    section {
+        padding: 2.5rem 0;
+    }
+
+    section h2 {
+        font-size: 2rem !important;
+    }
+
+    .container-lg {
+        padding: 0 1rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.25rem !important;
+    }
+
+    .btn-lg {
+        padding: 0.6rem 1.5rem !important;
+        font-size: 0.95rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    #home h1 {
+        font-size: 1.5rem !important;
+    }
+
+    #home h2 {
+        font-size: 1.2rem !important;
+    }
+
+    #home p {
+        font-size: 0.9rem !important;
+    }
+
+    section h2 {
+        font-size: 1.75rem !important;
+    }
+
+    .d-flex.gap-3 {
+        flex-direction: column;
+    }
+
+    .d-flex.gap-3 .btn {
+        width: 100%;
+    }
+
+    .project-card {
+        margin-bottom: 1rem;
+    }
+
+    .service-card {
+        padding: 1.5rem !important;
+    }
+
+    .navbar-brand {
+        font-size: 1.1rem !important;
+    }
+}
+
+/* ==================== Animation Classes ==================== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ==================== Utility Classes ==================== */
+.min-vh-100 {
+    min-height: 100vh;
+}
+
+.rounded-3 {
+    border-radius: 15px;
+}
+
+.shadow-lg {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* ==================== Fade and Scale Effects ==================== */
+.fade-in {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.slide-in-left {
+    animation: slideInLeft 0.6s ease-out;
+}
+
+.slide-in-right {
+    animation: slideInRight 0.6s ease-out;
+}
+
+/* ==================== Additional Hover Effects ==================== */
+a {
+    transition: all 0.3s ease;
+}
+
+a:not(.btn):not(.nav-link):hover {
+    color: #ff4757;
+}
+
+/* ==================== Footer Styling ==================== */
+footer {
+    margin-top: auto;
+}
+
+footer a:hover {
+    color: #ff4757 !important;
+    text-decoration: underline !important;
+}
+
+/* ==================== Loading and Transitions ==================== */
+.transition-all {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ==================== Container Max Width ==================== */
+.container-lg {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ==================== Statistics Section ==================== */
+.stat-card {
+    padding: 2rem 1rem;
+    background: linear-gradient(135deg, #1a1f3a 0%, #0f1424 100%);
+    border-radius: 12px;
+    border-left: 4px solid #ff4757;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 71, 87, 0.1) 0%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(255, 71, 87, 0.2);
+    border-left-color: #ff6b7a;
+}
+
+.stat-card:hover::before {
+    opacity: 1;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover .stat-number {
+    font-size: 3rem;
+}
+
+/* ==================== Back to Top Button ==================== */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #ff4757;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 999;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(255, 71, 87, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-to-top:hover {
+    background-color: #ff6b7a;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 71, 87, 0.6);
+}
+
+.back-to-top:active {
+    transform: translateY(0);
+}
+
+/* ==================== Testimonials Section ==================== */
+.testimonial-card {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(255, 71, 87, 0.2);
+}
+
+/* ==================== Process Section ==================== */
+.process-step {
+    position: relative;
+    padding: 20px;
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #ff4757, #ff6b7a);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    margin: 0 auto;
+    box-shadow: 0 5px 20px rgba(255, 71, 87, 0.3);
+    transition: all 0.3s ease;
+}
+
+.process-step:hover .step-number {
+    transform: scale(1.15);
+    box-shadow: 0 8px 30px rgba(255, 71, 87, 0.5);
+}
+
+/* ==================== Accordion Styling ==================== */
+.accordion-button {
+    transition: all 0.3s ease !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #2d3456 !important;
+    color: #ff4757 !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+    border-color: #ff4757 !important;
+}
+
+/* Accordion Icon Animation */
+.accordion-button i {
+    transition: transform 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) i {
+    transform: rotate(45deg);
+}
+
+/* ==================== Animation on Scroll ==================== */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ==================== Loading and Transitions ==================== */
+.transition-all {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+

@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Philip Adegboyega - Full Stack Web Developer | Professional Portfolio | 9 Years Experience">
+    <meta name="keywords"
+        content="Web Developer, Full Stack Developer, Bootstrap, JavaScript, HTML, CSS, Node.js, Firebase">
+    <meta name="author" content="Philip Adegboyega">
+    <meta property="og:title" content="Philip Adegboyega - Full Stack Developer">
+    <meta property="og:description"
+        content="Discover my professional portfolio featuring 200+ projects and 9 years of web development experience">
+    <meta property="og:image" content="./image/IMG-20250825-WA0016.jpg">
+    <title>Code Crafters Portifiolo</title>
+    <link rel="icon" href="./image/IMG-20250825-WA0016.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body style="background-color: #0a0e27;">
+    <!-- Navigation Bar - Sticky & Responsive -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top"
+        style="background-color: #0a0e27; border-bottom: 1px solid #1e2747;">
+        <div class="container-lg">
+            <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#"
+                style="color: #ff4757; font-family: 'Segoe Print', cursive; font-size: 1.5rem;">
+                Code Crafters
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-sm" href="#cvModal" data-bs-toggle="modal"
+                            style="background-color: #ff4757; color: white; padding: 0.4rem 1rem; border-radius: 5px;">
+                            <i class="fas fa-download me-1"></i>CV
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero/Home Section -->
+    <section id="home"
+        class="min-vh-100 d-flex align-items-center justify-content-center position-relative overflow-hidden"
+        style="background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0f1424 100%);">
+        <!-- Animated Background Elements -->
+        <div
+            style="position: absolute; top: -50%; right: -10%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(255, 71, 87, 0.2) 0%, rgba(255, 71, 87, 0.05) 50%, transparent 100%); border-radius: 50%; animation: float 8s ease-in-out infinite; filter: blur(40px); box-shadow: 0 0 80px rgba(255, 71, 87, 0.3);">
+        </div>
+        <div
+            style="position: absolute; bottom: -30%; left: -5%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(255, 71, 87, 0.15) 0%, rgba(255, 71, 87, 0.03) 50%, transparent 100%); border-radius: 50%; animation: float 10s ease-in-out infinite reverse; filter: blur(40px); box-shadow: 0 0 60px rgba(255, 71, 87, 0.2);">
+        </div>
+        <div
+            style="position: absolute; top: 10%; right: 10%; width: 400px; height: 400px; background: radial-gradient(circle, rgba(100, 200, 255, 0.12) 0%, rgba(100, 200, 255, 0.02) 50%, transparent 100%); border-radius: 50%; animation: float 12s ease-in-out infinite; filter: blur(40px); box-shadow: 0 0 60px rgba(100, 200, 255, 0.2);">
+        </div>
+        <div
+            style="position: absolute; bottom: 10%; right: 5%; width: 350px; height: 350px; background: radial-gradient(circle, rgba(255, 150, 100, 0.1) 0%, transparent 70%); border-radius: 50%; animation: float 11s ease-in-out infinite reverse; filter: blur(35px);">
+        </div>
+
+
+        <div class="container-lg text-center position-relative" style="z-index: 1;">
+            <h1 class="text-white fw-bold"
+                style="font-size: clamp(2rem, 8vw, 4rem); margin-bottom: 1rem; font-family: 'Segoe Print', cursive;">
+                I'm Philip Adegboyega
+            </h1>
+            <h2 class="text-white"
+                style="font-size: clamp(1.2rem, 5vw, 2.5rem); color: #ff4757; margin-bottom: 2rem; font-weight: 300;">
+                Full Stack Web Developer
+            </h2>
+            <p class="text-white-50 lead" style="max-width: 600px; margin: 0 auto 2.5rem; font-size: 1.1rem;">
+                I craft beautiful, responsive web applications with modern technologies. Let's build something amazing
+                together!
+            </p>
+            <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="#contact" class="btn btn-danger btn-lg"
+                    style="background-color: #ff4757; border: none; padding: 0.75rem 2rem;">
+                    <i class="fas fa-briefcase me-2"></i>Hire Me
+                </a>
+                <a href="#projects" class="btn btn-outline-light btn-lg"
+                    style="padding: 0.75rem 2rem; color: #ff4757; border-color: #ff4757;">
+                    <i class="fas fa-folder-open me-2"></i>View Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="stats" class="py-5" style="background-color: #0f1424; border-top: 1px solid #1e2747;">
+        <div class="container-lg">
+            <div class="row text-center">
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="stat-card">
+                        <h3 class="stat-number text-danger fw-bold" data-target="200">0</h3>
+                        <p class="text-white-50 mt-2">Projects Completed</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="stat-card">
+                        <h3 class="stat-number text-danger fw-bold" data-target="50">0</h3>
+                        <p class="text-white-50 mt-2">Happy Clients</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="stat-card">
+                        <h3 class="stat-number text-danger fw-bold" data-target="9">0</h3>
+                        <p class="text-white-50 mt-2">Years Experience</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="stat-card">
+                        <h3 class="stat-number text-danger fw-bold" data-target="15">0</h3>
+                        <p class="text-white-50 mt-2">Technologies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5" style="background-color: #0f1424;">
+        <div class="container-lg">
+            <div class="text-center mb-5">
+                <h2 class="text-white fw-bold" style="font-size: 2.5rem; margin-bottom: 1rem;">About Me</h2>
+                <div style="width: 60px; height: 4px; background: #ff4757; margin: 0 auto;"></div>
+            </div>
+
+            <div class="row align-items-center g-4">
+                <div class="col-lg-5">
+                    <img src="image/IMG-20250825-WA0016.jpg" alt="Philip" class="img-fluid rounded-3"
+                        style="object-fit: cover; height: 400px; width: 100%;">
+                </div>
+                <div class="col-lg-7">
+                    <p class="text-white-75 mb-3" style="font-size: 1.1rem; line-height: 1.8;">
+                        Hello! I'm a passionate Full Stack Web Developer with a strong foundation in building modern,
+                        scalable web applications.
+                        With expertise in both frontend and backend technologies, I create seamless user experiences and
+                        robust server-side solutions.
+                    </p>
+                    <p class="text-white-75 mb-4" style="font-size: 1.1rem; line-height: 1.8;">
+                        My journey in web development started with a curiosity about how things work on the internet.
+                        Today, I'm proficient in multiple
+                        programming languages and frameworks, delivering high-quality solutions that exceed client
+                        expectations.
+                    </p>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-check text-danger me-3" style="color: #ff4757;"></i>
+                                <span class="text-white">Responsive Design</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-check text-danger me-3" style="color: #ff4757;"></i>
+                                <span class="text-white">Web Performance</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-check text-danger me-3" style="color: #ff4757;"></i>
+                                <span class="text-white">API Development</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-check text-danger me-3" style="color: #ff4757;"></i>
+                                <span class="text-white">Database Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5" style="background-color: #0a0e27;">
+        <div class="container-lg">
+            <div class="text-center mb-5">
+                <h2 class="text-white fw-bold" style="font-size: 2.5rem; margin-bottom: 1rem;">My Skills</h2>
+                <div style="width: 60px; height: 4px; background: #ff4757; margin: 0 auto;"></div>
+            </div>
+
+            <div class="row g-3">
+                <!-- HTML5 -->
+                <div class="col-12">
+                    <div class="card border-0 skill-card" style="background-color: #1a1f3a; transition: all 0.3s ease;">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-code"
+                                        style="font-size: 1.5rem; color: #ff4757; margin-right: 1.5rem;"></i>
+                                    <h5 class="card-title text-white fw-bold mb-0">HTML</h5>
+                                </div>
+                                <span class="skill-percentage text-white fw-bold"></span>
+                            </div>
+                            <div class="progress" style="height: 8px; background-color: #0f1424;">
+                                <div class="progress-bar skill-bar" role="progressbar"
+                                    style="width: 0%; background-color: #ff4757; transition: width 1.5s ease;"
+                                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" data-target="92"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CSS3 -->
+                <div class="col-12">
+                    <div class="card border-0 skill-card" style="background-color: #1a1f3a; transition: all 0.3s ease;">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-code"
+                                        style="font-size: 1.5rem; color: #ff4757; margin-right: 1.5rem;"></i>
+                                    <h5 class="card-title text-white fw-bold mb-0">CSS</h5>
+                                </div>
+                                <span class="skill-percentage text-white fw-bold"></span>
+                            </div>
+                            <div class="progress" style="height: 8px; background-color: #0f1424;">
+                                <div class="progress-bar skill-bar" role="progressbar"
+                                    style="width: 0%; background-color: #ff4757; transition: width 1.5s ease;"
+                                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" data-target="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bootstrap -->
+                <div class="col-12">
+                    <div class="card border-0 skill-card" style="background-color: #1a1f3a; transition: all 0.3s ease;">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <div class="d-flex align-items-center">
+                                    <i class="fab fa-bootstrap"
+                                        style="font-size: 1.5rem; color: #ff4757; margin-right: 1.5rem;"></i>
+                                    <h5 class="card-title text-white fw-bold mb-0">Bootstrap</h5>
+                                </div>
+                                <span class="skill-percentage text-white fw-bold"></span>
+                            </div>
+                            <div class="progress" style="height: 8px; background-color: #0f1424;">
+                                <div class="progress-bar skill-bar" role="progressbar"
+                                    style="width: 0%; background-color: #ff4757; transition: width 1.5s ease;"
+                                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" data-target="78"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Node.js -->
+                <div class="col-12">
+                    <div class="card border-0 skill-card" style="background-color: #1a1f3a; transition: all 0.3s ease;">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <div class="d-flex align-items-center">
+                                    <i class="fab fa-node-js"
+                                        style="font-size: 1.5rem; color: #ff4757; margin-right: 1.5rem;"></i>
+                                    <h5 class="card-title text-white fw-bold mb-0">Node.js</h5>
+                                </div>
+                                <span class="skill-percentage text-white fw-bold"></span>
+                            </div>
+                            <div class="progress" style="height: 8px; background-color: #0f1424;">
+                                <div class="progress-bar skill-bar" role="progressbar"
+                                    style="width: 0%; background-color: #ff4757; transition: width 1.5s ease;"
+                                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" data-target="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="col-12">
+                    <div class="card border-0 skill-card" style="background-color: #1a1f3a; transition: all 0.3s ease;">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-code"
+                                        style="font-size: 1.5rem; color: #ff4757; margin-right: 1.5rem;"></i>
+                                    <h5 class="card-title text-white fw-bold mb-0">JavaScript</h5>
+                                </div>
+                                <span class="skill-percentage text-white fw-bold"></span>
+                            </div>
+                            <div class="progress" style="height: 8px; background-color: #0f1424;">
+                                <div class="progress-bar skill-bar" role="progressbar"
+                                    style="width: 0%; background-color: #ff4757; transition: width 1.5s ease;"
+                                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" data-target="88"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Firebase -->
+                <div class="col-12">
+                    <div class="card border-0 skill-card" style="background-color: #1a1f3a; transition: all 0.3s ease;">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-database"
+                                        style="font-size: 1.5rem; color: #ff4757; margin-right: 1.5rem;"></i>
+                                    <h5 class="card-title text-white fw-bold mb-0">Firebase</h5>
+                                </div>
+                                <span class="skill-percentage text-white fw-bold"></span>
+                            </div>
+                            <div class="progress" style="height: 8px; background-color: #0f1424;">
+                                <div class="progress-bar skill-bar" role="progressbar"
+                                    style="width: 0%; background-color: #ff4757; transition: width 1.5s ease;"
+                                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" data-target="63"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Git -->
+                <div class="col-12">
+                    <div class="card border-0 skill-card" style="background-color: #1a1f3a; transition: all 0.3s ease;">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <div class="d-flex align-items-center">
+                                    <i class="fab fa-git"
+                                        style="font-size: 1.5rem; color: #ff4757; margin-right: 1.5rem;"></i>
+                                    <h5 class="card-title text-white fw-bold mb-0">Git</h5>
+                                </div>
+                                <span class="skill-percentage text-white fw-bold"></span>
+                            </div>
+                            <div class="progress" style="height: 8px; background-color: #0f1424;">
+                                <div class="progress-bar skill-bar" role="progressbar"
+                                    style="width: 0%; background-color: #ff4757; transition: width 1.5s ease;"
+                                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" data-target="82"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5" style="background-color: #0f1424;">
+        <div class="container-lg">
+            <div class="text-center mb-5">
+                <h2 class="text-white fw-bold" style="font-size: 2.5rem; margin-bottom: 1rem;">Services</h2>
+                <div style="width: 60px; height: 4px; background: #ff4757; margin: 0 auto;"></div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Service 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card p-4 rounded-3 h-100 border-0"
+                        style="background-color: #1a1f3a; border-left: 4px solid #ff4757; transition: all 0.3s ease;">
+                        <div class="mb-3">
+                            <i class="fas fa-laptop-code" style="font-size: 2.5rem; color: #ff4757;"></i>
+                        </div>
+                        <h5 class="text-white fw-bold mb-3">Web Development</h5>
+                        <p class="text-white-50 mb-0">
+                            Building modern, responsive websites and web applications using the latest technologies and
+                            best practices.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card p-4 rounded-3 h-100 border-0"
+                        style="background-color: #1a1f3a; border-left: 4px solid #ff4757; transition: all 0.3s ease;">
+                        <div class="mb-3">
+                            <i class="fas fa-mobile-alt" style="font-size: 2.5rem; color: #ff4757;"></i>
+                        </div>
+                        <h5 class="text-white fw-bold mb-3">Responsive Design</h5>
+                        <p class="text-white-50 mb-0">
+                            Creating beautiful interfaces that work seamlessly across all devices and screen sizes.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card p-4 rounded-3 h-100 border-0"
+                        style="background-color: #1a1f3a; border-left: 4px solid #ff4757; transition: all 0.3s ease;">
+                        <div class="mb-3">
+                            <i class="fas fa-cogs" style="font-size: 2.5rem; color: #ff4757;"></i>
+                        </div>
+                        <h5 class="text-white fw-bold mb-3">Backend Solutions</h5>
+                        <p class="text-white-50 mb-0">
+                            Developing scalable server-side solutions with robust APIs and efficient database
+                            management.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card p-4 rounded-3 h-100 border-0"
+                        style="background-color: #1a1f3a; border-left: 4px solid #ff4757; transition: all 0.3s ease;">
+                        <div class="mb-3">
+                            <i class="fas fa-rocket" style="font-size: 2.5rem; color: #ff4757;"></i>
+                        </div>
+                        <h5 class="text-white fw-bold mb-3">Performance Optimization</h5>
+                        <p class="text-white-50 mb-0">
+                            Enhancing website speed and performance for better user experience and SEO rankings.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card p-4 rounded-3 h-100 border-0"
+                        style="background-color: #1a1f3a; border-left: 4px solid #ff4757; transition: all 0.3s ease;">
+                        <div class="mb-3">
+                            <i class="fas fa-bug" style="font-size: 2.5rem; color: #ff4757;"></i>
+                        </div>
+                        <h5 class="text-white fw-bold mb-3">Bug Fixing & Maintenance</h5>
+                        <p class="text-white-50 mb-0">
+                            Providing ongoing support, debugging, and maintenance for your existing applications.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card p-4 rounded-3 h-100 border-0"
+                        style="background-color: #1a1f3a; border-left: 4px solid #ff4757; transition: all 0.3s ease;">
+                        <div class="mb-3">
+                            <i class="fas fa-graduation-cap" style="font-size: 2.5rem; color: #ff4757;"></i>
+                        </div>
+                        <h5 class="text-white fw-bold mb-3">Consultation & Training</h5>
+                        <p class="text-white-50 mb-0">
+                            Offering expert advice and training sessions to help teams improve their web development
+                            skills.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5" style="background-color: #0f1424; border-top: 1px solid #1e2747;">
+        <div class="container-lg">
+            <div class="text-center mb-5">
+                <h2 class="text-white fw-bold" style="font-size: 2.5rem; margin-bottom: 1rem;">What Clients Say</h2>
+                <div style="width: 60px; height: 4px; background: #ff4757; margin: 0 auto;"></div>
+            </div>
+            <div class="row g-4">
+                <!-- Testimonial 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card p-4 rounded-3"
+                        style="background-color: #1a1f3a; border-left: 4px solid #ff4757;">
+                        <div class="mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p class="text-white-75 mb-4">"Philip delivered an exceptional website that exceeded our
+                            expectations. Professional, reliable, and highly skilled!"</p>
+                        <div class="d-flex align-items-center">
+                            <img src="image/IMG-20250825-WA0016.jpg" alt="Client"
+                                style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; margin-right: 12px; border: 2px solid #ff4757;">
+                            <div>
+                                <p class="text-white fw-bold mb-0">Sarah Mitchell</p>
+                                <p class="text-white-50 mb-0">San Francisco</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card p-4 rounded-3"
+                        style="background-color: #1a1f3a; border-left: 4px solid #ff4757;">
+                        <div class="mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p class="text-white-75 mb-4">"Great communication, attention to detail, and timely delivery.
+                            Highly recommended for any web development project!"</p>
+                        <div class="d-flex align-items-center">
+                            <img src="image/IMG-20250825-WA0016.jpg" alt="Client"
+                                style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; margin-right: 12px; border: 2px solid #ff4757;">
+                            <div>
+                                <p class="text-white fw-bold mb-0">Marcus Johnson</p>
+                                <p class="text-white-50 mb-0">New York</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card p-4 rounded-3"
+                        style="background-color: #1a1f3a; border-left: 4px solid #ff4757;">
+                        <div class="mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p class="text-white-75 mb-4">"The best developer I've worked with. Creative solutions, perfect
+                            code quality, and always available for support."</p>
+                        <div class="d-flex align-items-center">
+                            <img src="image/IMG-20250825-WA0016.jpg" alt="Client"
+                                style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; margin-right: 12px; border: 2px solid #ff4757;">
+                            <div>
+                                <p class="text-white fw-bold mb-0">Emily Rodriguez</p>
+                                <p class="text-white-50 mb-0">London</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-5" style="background-color: #0a0e27;">
+        <div class="container-lg">
+            <div class="text-center mb-5">
+                <h2 class="text-white fw-bold" style="font-size: 2.5rem; margin-bottom: 1rem;">My Development Process
+                </h2>
+                <div style="width: 60px; height: 4px; background: #ff4757; margin: 0 auto;"></div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-2 col-6 text-center mb-4">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h6 class="text-white mt-3 fw-bold">Discovery</h6>
+                        <p class="text-white-50 small">Understand your goals</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 text-center mb-4">
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h6 class="text-white mt-3 fw-bold">Planning</h6>
+                        <p class="text-white-50 small">Design the solution</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 text-center mb-4">
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h6 class="text-white mt-3 fw-bold">Development</h6>
+                        <p class="text-white-50 small">Build with excellence</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 text-center mb-4">
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h6 class="text-white mt-3 fw-bold">Testing</h6>
+                        <p class="text-white-50 small">Quality assurance</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 text-center mb-4">
+                    <div class="process-step">
+                        <div class="step-number">5</div>
+                        <h6 class="text-white mt-3 fw-bold">Deployment</h6>
+                        <p class="text-white-50 small">Go live smoothly</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 text-center mb-4">
+                    <div class="process-step">
+                        <div class="step-number">6</div>
+                        <h6 class="text-white mt-3 fw-bold">Support</h6>
+                        <p class="text-white-50 small">Ongoing assistance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5" style="background-color: #0a0e27;">
+        <div class="container-lg">
+            <div class="text-center mb-5">
+                <h2 class="text-white fw-bold" style="font-size: 2.5rem; margin-bottom: 1rem;">My Projects</h2>
+                <div style="width: 60px; height: 4px; background: #ff4757; margin: 0 auto;"></div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Project 1 - Travel Space -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 h-100 project-card"
+                        style="background-color: #1a1f3a; overflow: hidden; transition: all 0.3s ease;">
+                        <div
+                            style="height: 250px; overflow: hidden; background: linear-gradient(135deg, #ff4757 0%, #ee5a6f 100%);">
+                            <img src="image/Screenshot 2025-12-06 023812.png" alt="Travel Space" class="w-100 h-100"
+                                style="object-fit: cover;">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-white fw-bold">Travel Space</h5>
+                            <p class="card-text text-white-50 flex-grow-1">
+                                A beautiful and responsive travel website showcasing amazing destinations with modern
+                                design and smooth navigation.
+                            </p>
+                            <div class="d-flex gap-2 flex-wrap mb-3">
+                                <span class="badge" style="background-color: #ff4757; color: white;">Bootstrap</span>
+                                <span class="badge" style="background-color: #ff4757; color: white;">CSS</span>
+                                <span class="badge" style="background-color: #ff4757; color: white;">HTML</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="https://travelspace-cli117.netlify.app/" target="_blank"
+                                    class="btn btn-sm btn-danger flex-grow-1"
+                                    style="background-color: #ff4757; border: none;">
+                                    <i class="fas fa-globe me-2"></i>Live
+                                </a>
+                                <a href="https://github.com/philip200802/Travel-space-project" target="_blank"
+                                    class="btn btn-sm btn-outline-light flex-grow-1"
+                                    style="border-color: #ff4757; color: #ff4757;">
+                                    <i class="fab fa-github me-2"></i>GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 - LAUTECH CGPA Checker -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 h-100 project-card"
+                        style="background-color: #1a1f3a; overflow: hidden; transition: all 0.3s ease;">
+                        <div
+                            style="height: 250px; overflow: hidden; background: linear-gradient(135deg, #ff4757 0%, #ee5a6f 100%);">
+                            <img src="image/Screenshot 2025-12-06 074941.png" alt="LAUTECH CGPA Checker"
+                                class="w-100 h-100" style="object-fit: cover;">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-white fw-bold">LAUTECH CGPA Checker</h5>
+                            <p class="card-text text-white-50 flex-grow-1">
+                                A web application for LAUTECH students to calculate and track their CGPA with an
+                                intuitive interface.
+                            </p>
+                            <div class="d-flex gap-2 flex-wrap mb-3">
+                                <span class="badge" style="background-color: #ff4757; color: white;">JavaScript</span>
+                                <span class="badge" style="background-color: #ff4757; color: white;">CSS</span>
+                                <span class="badge" style="background-color: #ff4757; color: white;">HTML</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="https://lautech-cgpa-checker.netlify.app/" target="_blank"
+                                    class="btn btn-sm btn-danger flex-grow-1"
+                                    style="background-color: #ff4757; border: none;">
+                                    <i class="fas fa-globe me-2"></i>Live
+                                </a>
+                                <a href="https://github.com/philip200802/assignment3" target="_blank"
+                                    class="btn btn-sm btn-outline-light flex-grow-1"
+                                    style="border-color: #ff4757; color: #ff4757;">
+                                    <i class="fab fa-github me-2"></i>GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 - Behance -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 h-100 project-card"
+                        style="background-color: #1a1f3a; overflow: hidden; transition: all 0.3s ease;">
+                        <div
+                            style="height: 250px; overflow: hidden; background: linear-gradient(135deg, #ff4757 0%, #ee5a6f 100%);">
+                            <img src="image/Screenshot 2025-12-06 082159.png" alt="Behance" class="w-100 h-100"
+                                style="object-fit: cover;">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-white fw-bold">Behance Portfolio</h5>
+                            <p class="card-text text-white-50 flex-grow-1">
+                                A stunning portfolio showcase built with modern web technologies featuring responsive
+                                design and smooth interactions.
+                            </p>
+                            <div class="d-flex gap-2 flex-wrap mb-3">
+                                <span class="badge" style="background-color: #ff4757; color: white;">Bootstrap</span>
+                                <span class="badge" style="background-color: #ff4757; color: white;">CSS</span>
+                                <span class="badge" style="background-color: #ff4757; color: white;">HTML</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="https://sqi-leve1project-cli117.vercel.app/" target="_blank"
+                                    class="btn btn-sm btn-danger flex-grow-1"
+                                    style="background-color: #ff4757; border: none;">
+                                    <i class="fas fa-globe me-2"></i>Live
+                                </a>
+                                <a href="https://github.com/philip200802/Level1-project" target="_blank"
+                                    class="btn btn-sm btn-outline-light flex-grow-1"
+                                    style="border-color: #ff4757; color: #ff4757;">
+                                    <i class="fab fa-github me-2"></i>GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 - Algorithm Folder -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 h-100 project-card"
+                        style="background-color: #1a1f3a; overflow: hidden; transition: all 0.3s ease;">
+                        <div
+                            style="height: 250px; overflow: hidden; background: linear-gradient(135deg, #ff4757 0%, #ee5a6f 100%);">
+                            <img src="image/Screenshot 2025-12-06 083233.png" alt="Algorithm Folder" class="w-100 h-100"
+                                style="object-fit: cover;">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-white fw-bold">Problem Solver (Algorithm)</h5>
+                            <p class="card-text text-white-50 flex-grow-1">
+                                A comprehensive web application showcasing algorithm implementations with interactive
+                                visualizations and clean UI.
+                            </p>
+                            <div class="d-flex gap-2 flex-wrap mb-3">
+                                <span class="badge" style="background-color: #ff4757; color: white;">JavaScript</span>
+                                <span class="badge" style="background-color: #ff4757; color: white;">Bootstrap</span>
+                                <span class="badge" style="background-color: #ff4757; color: white;">CSS</span>
+                                <span class="badge" style="background-color: #ff4757; color: white;">HTML</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="https://assignment-con.vercel.app/" target="_blank"
+                                    class="btn btn-sm btn-danger flex-grow-1"
+                                    style="background-color: #ff4757; border: none;">
+                                    <i class="fas fa-globe me-2"></i>Live
+                                </a>
+                                <a href="https://github.com/philip200802/assignment-con" target="_blank"
+                                    class="btn btn-sm btn-outline-light flex-grow-1"
+                                    style="border-color: #ff4757; color: #ff4757;">
+                                    <i class="fab fa-github me-2"></i>GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 - Simple Calculator -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 h-100 project-card"
+                        style="background-color: #1a1f3a; overflow: hidden; transition: all 0.3s ease;">
+                        <div
+                            style="height: 250px; overflow: hidden; background: linear-gradient(135deg, #ff4757 0%, #ee5a6f 100%);">
+                            <img src="image/Screenshot 2025-12-06 085039.png" alt="Simple Calculator"
+                                class="w-100 h-100" style="object-fit: cover;">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-white fw-bold">Simple Calculator</h5>
+                            <p class="card-text text-white-50 flex-grow-1">
+                                A beginner-friendly calculator web application with a clean interface for basic
+                                arithmetic operations.
+                            </p>
+                            <div class="d-flex gap-2 flex-wrap mb-3">
+                                <span class="badge" style="background-color: #ff4757; color: white;">Bootstrap</span>
+                                <span class="badge" style="background-color: #ff4757; color: white;">CSS</span>
+                                <span class="badge" style="background-color: #ff4757; color: white;">HTML</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="https://beginners-calculator.netlify.app/" target="_blank"
+                                    class="btn btn-sm btn-danger flex-grow-1"
+                                    style="background-color: #ff4757; border: none;">
+                                    <i class="fas fa-globe me-2"></i>Live
+                                </a>
+                                <a href="https://github.com/philip200802/correction" target="_blank"
+                                    class="btn btn-sm btn-outline-light flex-grow-1"
+                                    style="border-color: #ff4757; color: #ff4757;">
+                                    <i class="fab fa-github me-2"></i>GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 - Saatchi Art -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 h-100 project-card"
+                        style="background-color: #1a1f3a; overflow: hidden; transition: all 0.3s ease;">
+                        <div
+                            style="height: 250px; overflow: hidden; background: linear-gradient(135deg, #ff4757 0%, #ee5a6f 100%);">
+                            <img src="image/Screenshot 2025-12-06 120242.png" alt="Saatchi Art" class="w-100 h-100"
+                                style="object-fit: cover;">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-white fw-bold">Saatchi Art</h5>
+                            <p class="card-text text-white-50 flex-grow-1">
+                                An elegant art gallery platform showcasing beautiful artwork with interactive features
+                                and responsive design.
+                            </p>
+                            <div class="d-flex gap-2 flex-wrap mb-3">
+                                <span class="badge" style="background-color: #ff4757; color: white;">Bootstrap</span>
+                                <span class="badge" style="background-color: #ff4757; color: white;">CSS</span>
+                                <span class="badge" style="background-color: #ff4757; color: white;">HTML</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="https://ass4-cli-117.vercel.app/" target="_blank"
+                                    class="btn btn-sm btn-danger flex-grow-1"
+                                    style="background-color: #ff4757; border: none;">
+                                    <i class="fas fa-globe me-2"></i>Live
+                                </a>
+                                <a href="https://github.com/philip200802/Ass4" target="_blank"
+                                    class="btn btn-sm btn-outline-light flex-grow-1"
+                                    style="border-color: #ff4757; color: #ff4757;">
+                                    <i class="fab fa-github me-2"></i>GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-5" style="background-color: #0a0e27; border-top: 1px solid #1e2747;">
+        <div class="container-lg">
+            <div class="text-center mb-5">
+                <h2 class="text-white fw-bold" style="font-size: 2.5rem; margin-bottom: 1rem;">Frequently Asked
+                    Questions</h2>
+                <div style="width: 60px; height: 4px; background: #ff4757; margin: 0 auto;"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="accordion accordion-flush" id="faqAccordion" style="background-color: transparent;">
+                        <div class="row g-3">
+                            <!-- FAQ 1 -->
+                            <div class="col-md-6">
+                                <div class="accordion-item"
+                                    style="background-color: #1a1f3a; border-color: #2d3456; border-radius: 8px; overflow: hidden; height: 100%;">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed text-white fw-bold" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faq1"
+                                            style="background-color: #1a1f3a; padding: 1.2rem; padding-right: 3.5rem; position: relative;">
+                                            <span>What is your typical project timeline?</span>
+                                            <i class="fas fa-plus-circle"
+                                                style="color: #ff4757; font-size: 1.2rem; position: absolute; right: 1.2rem; top: 50%; transform: translateY(-50%);"></i>
+                                        </button>
+                                    </h2>
+                                    <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body text-white-75"
+                                            style="background-color: #0a0e27; padding: 1.2rem;">
+                                            Project timelines vary based on scope and complexity. A simple website takes
+                                            2-4
+                                            weeks, while complex applications may take 8-12 weeks. I'll provide a
+                                            detailed
+                                            timeline during the discovery phase.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 2 -->
+                            <div class="col-md-6">
+                                <div class="accordion-item"
+                                    style="background-color: #1a1f3a; border-color: #2d3456; border-radius: 8px; overflow: hidden; height: 100%;">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed text-white fw-bold" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faq2"
+                                            style="background-color: #1a1f3a; padding: 1.2rem; padding-right: 3.5rem; position: relative;">
+                                            <span>Do you provide ongoing support after deployment?</span>
+                                            <i class="fas fa-plus-circle"
+                                                style="color: #ff4757; font-size: 1.2rem; position: absolute; right: 1.2rem; top: 50%; transform: translateY(-50%);"></i>
+                                        </button>
+                                    </h2>
+                                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body text-white-75"
+                                            style="background-color: #0a0e27; padding: 1.2rem;">
+                                            Absolutely! I offer maintenance packages that include bug fixes, updates,
+                                            and
+                                            feature enhancements. Support can be hourly, monthly, or retainer-based.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 3 -->
+                            <div class="col-md-6">
+                                <div class="accordion-item"
+                                    style="background-color: #1a1f3a; border-color: #2d3456; border-radius: 8px; overflow: hidden; height: 100%;">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed text-white fw-bold" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faq3"
+                                            style="background-color: #1a1f3a; padding: 1.2rem; padding-right: 3.5rem; position: relative;">
+                                            <span>What technologies do you work with?</span>
+                                            <i class="fas fa-plus-circle"
+                                                style="color: #ff4757; font-size: 1.2rem; position: absolute; right: 1.2rem; top: 50%; transform: translateY(-50%);"></i>
+                                        </button>
+                                    </h2>
+                                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body text-white-75"
+                                            style="background-color: #0a0e27; padding: 1.2rem;">
+                                            I specialize in: HTML5, CSS3, JavaScript, Bootstrap, Node.js, Express,
+                                            Firebase,
+                                            Git, and more. I'm constantly learning new technologies to serve you better.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 4 -->
+                            <div class="col-md-6">
+                                <div class="accordion-item"
+                                    style="background-color: #1a1f3a; border-color: #2d3456; border-radius: 8px; overflow: hidden; height: 100%;">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed text-white fw-bold" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faq4"
+                                            style="background-color: #1a1f3a; padding: 1.2rem; padding-right: 3.5rem; position: relative;">
+                                            <span>How do you ensure code quality?</span>
+                                            <i class="fas fa-plus-circle"
+                                                style="color: #ff4757; font-size: 1.2rem; position: absolute; right: 1.2rem; top: 50%; transform: translateY(-50%);"></i>
+                                        </button>
+                                    </h2>
+                                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body text-white-75"
+                                            style="background-color: #0a0e27; padding: 1.2rem;">
+                                            I follow industry best practices, write clean code, perform thorough
+                                            testing,
+                                            conduct code reviews, and use version control. Every project undergoes
+                                            rigorous QA
+                                            before deployment.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5"
+        style="background: linear-gradient(135deg, #ff4757 0%, #ff6b7a 100%); position: relative; overflow: hidden;">
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.3);"></div>
+        <div class="container-lg text-center position-relative" style="z-index: 1;">
+            <h2 class="text-white fw-bold mb-4" style="font-size: 2.5rem;">Ready to Start Your Project?</h2>
+            <p class="text-white mb-4" style="font-size: 1.1rem; max-width: 600px; margin: 0 auto 2rem;">
+                Let's collaborate and create something amazing. Get in touch today and let's discuss your project goals.
+            </p>
+            <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="#contact" class="btn btn-light btn-lg"
+                    style="padding: 0.75rem 2rem; color: #ff4757; font-weight: bold;">
+                    <i class="fas fa-envelope me-2"></i>Let's Talk
+                </a>
+                <a href="#projects" class="btn btn-outline-light btn-lg"
+                    style="padding: 0.75rem 2rem; border-color: white; color: white;">
+                    <i class="fas fa-folder-open me-2"></i>View My Work
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5" style="background-color: #0f1424;">
+        <div class="container-lg">
+            <div class="text-center mb-5">
+                <h2 class="text-white fw-bold" style="font-size: 2.5rem; margin-bottom: 1rem;">Get In Touch</h2>
+                <div style="width: 60px; height: 4px; background: #ff4757; margin: 0 auto;"></div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Contact Info -->
+                <div class="col-lg-5">
+                    <div class="mb-4">
+                        <div class="d-flex align-items-start mb-4">
+                            <i class="fas fa-map-marker-alt"
+                                style="font-size: 1.5rem; color: #ff4757; margin-right: 1.5rem; margin-top: 0.5rem;"></i>
+                            <div>
+                                <h5 class="text-white fw-bold mb-2">Address</h5>
+                                <p class="text-white-50 mb-0">Ogbomoso, Oyo state, Nigeria</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start mb-4">
+                            <i class="fas fa-phone-alt"
+                                style="font-size: 1.5rem; color: #ff4757; margin-right: 1.5rem; margin-top: 0.5rem;"></i>
+                            <div>
+                                <h5 class="text-white fw-bold mb-2">Phone</h5>
+                                <p class="text-white-50 mb-0">+234 (0) 7064136432</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start">
+                            <i class="fas fa-envelope"
+                                style="font-size: 1.5rem; color: #ff4757; margin-right: 1.5rem; margin-top: 0.5rem;"></i>
+                            <div>
+                                <h5 class="text-white fw-bold mb-2">Email</h5>
+                                <p class="text-white-50 mb-0">adegboyegaphilip401@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="mt-5">
+                        <h5 class="text-white fw-bold mb-3">Follow Me</h5>
+                        <div class="d-flex gap-3">
+                            <a href="#" class="social-link"
+                                style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; background-color: #1a1f3a; border-radius: 50%; color: #ff4757; transition: all 0.3s ease;">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link"
+                                style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; background-color: #1a1f3a; border-radius: 50%; color: #ff4757; transition: all 0.3s ease;">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link"
+                                style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; background-color: #1a1f3a; border-radius: 50%; color: #ff4757; transition: all 0.3s ease;">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-link"
+                                style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; background-color: #1a1f3a; border-radius: 50%; color: #ff4757; transition: all 0.3s ease;">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-link"
+                                style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; background-color: #1a1f3a; border-radius: 50%; color: #ff4757; transition: all 0.3s ease;">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-7">
+                    <form id="contactForm" class="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label text-white">Full Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required
+                                style="background-color: #1a1f3a; border: 1px solid #2d3456; color: white; padding: 0.75rem;">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label text-white">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="your@email.com" required
+                                style="background-color: #1a1f3a; border: 1px solid #2d3456; color: white; padding: 0.75rem;">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="subject" class="form-label text-white">Subject</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Subject" required
+                                style="background-color: #1a1f3a; border: 1px solid #2d3456; color: white; padding: 0.75rem;">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="message" class="form-label text-white">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required
+                                style="background-color: #1a1f3a; border: 1px solid #2d3456; color: white; padding: 0.75rem;"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-danger btn-lg"
+                            style="background-color: #ff4757; border: none; width: 100%;">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4" style="background-color: #0a0e27; border-top: 1px solid #1e2747;">
+        <div class="container-lg">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-white-50 mb-0">&copy; 2025 Code Crafters. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <a href="#home" class="text-white-50 text-decoration-none me-3">Back to Top</a>
+                    <a href="#" class="text-white-50 text-decoration-none">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" class="back-to-top" style="display: none;">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- CV Modal -->
+    <div class="modal fade" id="cvModal" tabindex="-1" style="background-color: rgba(0,0,0,0.7);">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content"
+                style="background-color: #1a1f3a; border: 2px solid #ff4757; border-radius: 12px;">
+                <div class="modal-header" style="border-bottom: 2px solid #ff4757; background-color: #0a0e27;">
+                    <h5 class="modal-title text-white fw-bold" style="font-size: 1.5rem;">
+                        <i class="fas fa-file-pdf me-2" style="color: #ff4757;"></i>Download CV
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-white" style="padding: 2rem;">
+                    <p class="mb-4">My CV is available in different formats. Choose one to download:</p>
+                    <div class="d-grid gap-2">
+                        <a href="prtifolio.pdf" download="Philip_Adegboyega_CV.pdf" class="btn btn-danger"
+                            style="background-color: #ff4757; border: none; font-weight: bold;">
+                            <i class="fas fa-file-pdf me-2"></i>Download PDF
+                        </a>
+                        <a href="Document1.docx" download="Philip_Adegboyega_CV.docx" class="btn btn-outline-light"
+                            style="color: #ff4757; border-color: #ff4757; font-weight: bold;">
+                            <i class="fas fa-file-word me-2"></i>Download DOCX
+                        </a>
+                    </div>
+                    <p class="text-white-50 mt-3 small mb-0">
+                        <i class="fas fa-info-circle me-2"></i>
+                        For immediate inquiries, please use the contact form below.
+                    </p>
+                </div>
+                <div class="modal-footer" style="border-top: 1px solid #2d3456; background-color: #0a0e27;">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                        style="background-color: #2d3456; border: none;">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Message Modal -->
+    <div class="modal fade" id="messageModal" tabindex="-1" style="background-color: rgba(0,0,0,0.7);">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content"
+                style="background-color: #1a1f3a; border: 2px solid #ff4757; border-radius: 12px;">
+                <div class="modal-header" style="border-bottom: 2px solid #ff4757; background-color: #0a0e27;">
+                    <h5 class="modal-title text-white fw-bold" id="modalTitle"></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-white" style="padding: 2rem;">
+                    <p id="modalMessage" class="mb-0"></p>
+                </div>
+                <div class="modal-footer" style="border-top: 1px solid #2d3456; background-color: #0a0e27;">
+                    <button type="button" class="btn" data-bs-dismiss="modal"
+                        style="background-color: #ff4757; border: none; color: white; font-weight: bold;">
+                        OK
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
+
+<script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    }); addEventListener
+
+    // Skill bar and percentage animation
+    function animateSkills() {
+        const skillBars = document.querySelectorAll('.skill-bar');
+        const skillPercentages = document.querySelectorAll('.skill-percentage');
+
+        skillBars.forEach((bar, index) => {
+            const target = parseInt(bar.getAttribute('data-target'));
+
+            // Animate progress bar
+            setTimeout(() => {
+                bar.style.width = target + '%';
+            }, index * 100);
+
+            // Animate percentage counter
+            const percentageSpan = skillPercentages[index];
+            let current = 0;
+            const increment = target / 50;
+
+            const counter = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    percentageSpan.textContent = target + '%';
+                    clearInterval(counter);
+                } else {
+                    percentageSpan.textContent = Math.floor(current) + '%';
+                }
+            }, 30);
+        });
+    }
+
+    // Trigger animation when skills section is visible
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateSkills();
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.3 });
+
+    const skillsSection = document.querySelector('#skills');
+    if (skillsSection) {
+        observer.observe(skillsSection);
+    }
+
+    // Statistics Counter Animation
+    function animateStats() {
+        const statNumbers = document.querySelectorAll('.stat-number');
+
+        statNumbers.forEach(stat => {
+            const target = parseInt(stat.getAttribute('data-target'));
+            let current = 0;
+            const increment = target / 30;
+
+            const counter = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    stat.textContent = target;
+                    clearInterval(counter);
+                } else {
+                    stat.textContent = Math.floor(current);
+                }
+            }, 50);
+        });
+    }
+
+    // Trigger stats animation when stats section is visible
+    const statsObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateStats();
+                statsObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.3 });
+
+    const statsSection = document.querySelector('#stats');
+    if (statsSection) {
+        statsObserver.observe(statsSection);
+    }
+
+    // Back to Top Button
+    const backToTopBtn = document.getElementById('backToTopBtn');
+
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            backToTopBtn.style.display = 'block';
+        } else {
+            backToTopBtn.style.display = 'none';
+        }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    // Scroll Animation for Elements
+    const scrollElements = document.querySelectorAll('.project-card, .service-card, .testimonial-card, .process-step, .stat-card');
+
+    const elementInView = (el, dividend = 1) => {
+        const elementTop = el.getBoundingClientRect().top;
+        return elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend;
+    };
+
+    const elementOutofView = (el) => {
+        const elementTop = el.getBoundingClientRect().top;
+        return elementTop > (window.innerHeight || document.documentElement.clientHeight);
+    };
+
+    const displayScrollElements = () => {
+        scrollElements.forEach((element) => {
+            if (elementInView(element, 1.25)) {
+                element.classList.add('animate-on-scroll', 'visible');
+            } else if (elementOutofView(element)) {
+                element.classList.remove('animate-on-scroll', 'visible');
+            }
+        });
+    };
+
+    window.addEventListener('scroll', displayScrollElements);
+    displayScrollElements();
+
+    // Enhanced Contact Form with Validation
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const subject = document.getElementById('subject').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address!');
+                return;
+            }
+
+            if (name.length < 3 || message.length < 10) {
+                showModal('Error', 'Please fill all fields properly!', 'danger');
+                return;
+            }
+
+            showModal('Success', `Thank you ${name}! Your message has been sent successfully. I'll get back to you soon!`, 'success');
+            contactForm.reset();
+        });
+    }
+
+    // Modal Functions
+    function showModal(title, message, type = 'info') {
+        const modal = new bootstrap.Modal(document.getElementById('messageModal'));
+        document.getElementById('modalTitle').textContent = title;
+        document.getElementById('modalMessage').textContent = message;
+
+        const modalHeader = document.querySelector('#messageModal .modal-header');
+        const modalButton = document.querySelector('#messageModal .modal-footer .btn');
+
+        // Update colors based on type
+        if (type === 'success') {
+            modalHeader.style.borderBottomColor = '#28a745';
+            modalButton.style.backgroundColor = '#28a745';
+            modalButton.style.borderColor = '#28a745';
+        } else if (type === 'danger') {
+            modalHeader.style.borderBottomColor = '#dc3545';
+            modalButton.style.backgroundColor = '#dc3545';
+            modalButton.style.borderColor = '#dc3545';
+        } else {
+            modalHeader.style.borderBottomColor = '#ff4757';
+            modalButton.style.backgroundColor = '#ff4757';
+            modalButton.style.borderColor = '#ff4757';
+        }
+
+        modal.show();
+    }
+
+    // Email validation fix
+    const emailInput = document.getElementById('email');
+    if (emailInput) {
+        emailInput.addEventListener('blur', function () {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (this.value && !emailRegex.test(this.value)) {
+                this.style.borderColor = '#dc3545';
+            } else {
+                this.style.borderColor = '#2d3456';
+            }
+        });
+    }
+</script>
+
+</html>
