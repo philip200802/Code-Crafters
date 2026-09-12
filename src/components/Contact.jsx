@@ -174,69 +174,102 @@ export default function Contact() {
 
         </div>
 
-        {/* MESSAGE FORM */}
-        <div className="mt-7 rounded-xl border border-white/15 bg-[#090909] p-5 sm:p-6">
+     {/* MESSAGE FORM */}
+<div className="mt-7 rounded-xl border border-white/15 bg-[#090909] p-5 sm:p-6">
 
-          <h3 className="mb-4 text-base font-semibold">
-            Send me a message
-          </h3>
+  <h3 className="mb-5 text-base font-semibold">
+    Send me a message
+  </h3>
 
-          <form
-            ref={form}
-            onSubmit={sendEmail}
-            className="space-y-3.5"
-          >
-
-            {/* NAME */}
-            <input
-              type="text"
-              name="name"
-              placeholder="Your Name"
-              required
-              className="w-full rounded-lg border border-white/10 bg-[#111] px-4 py-3 text-sm text-white outline-none placeholder:text-gray-500 focus:border-white/30"
-            />
-
-            {/* EMAIL */}
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              required
-              className="w-full rounded-lg border border-white/10 bg-[#111] px-4 py-3 text-sm text-white outline-none placeholder:text-gray-500 focus:border-white/30"
-            />
-
-            {/* TIME */}
-            <input
-              type="hidden"
-              name="time"
-              value={new Date().toLocaleString("en-NG", {
-                dateStyle: "medium",
-                timeStyle: "short",
-              })}
-            />
-
-            {/* MESSAGE */}
-            <textarea
-              name="message"
-              placeholder="Your Message"
-              rows="6"
-              required
-              className="w-full resize-none rounded-lg border border-white/10 bg-[#111] px-4 py-3 text-sm text-white outline-none placeholder:text-gray-500 focus:border-white/30"
-            ></textarea>
-
-        <div className="flex justify-center">
-  <button
-    type="submit"
-    disabled={sending}
-    className="rounded-lg bg-[#292929] px-14 py-3 text-sm font-semibold text-white transition hover:bg-[#333] disabled:cursor-not-allowed disabled:opacity-50"
+  <form
+    ref={form}
+    onSubmit={sendEmail}
+    className="space-y-4"
   >
-    {sending ? "Sending..." : "Send Message"}
-  </button>
+
+    {/* NAME */}
+    <div>
+      <label
+        htmlFor="name"
+        className="mb-2 block text-sm font-medium text-white"
+      >
+        Name
+      </label>
+
+      <input
+        id="name"
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        required
+        className="w-full rounded-lg border border-white/10 bg-[#111] px-4 py-3 text-sm text-white outline-none placeholder:text-gray-500 focus:border-white/30"
+      />
+    </div>
+
+    {/* EMAIL */}
+    <div>
+      <label
+        htmlFor="email"
+        className="mb-2 block text-sm font-medium text-white"
+      >
+        Email
+      </label>
+
+      <input
+        id="email"
+        type="email"
+        name="email"
+        placeholder="Your Email"
+        required
+        className="w-full rounded-lg border border-white/10 bg-[#111] px-4 py-3 text-sm text-white outline-none placeholder:text-gray-500 focus:border-white/30"
+      />
+    </div>
+
+    {/* TIME */}
+    <input
+      type="hidden"
+      name="time"
+    />
+
+    {/* MESSAGE */}
+    <div>
+      <label
+        htmlFor="message"
+        className="mb-2 block text-sm font-medium text-white"
+      >
+        Message
+      </label>
+
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Your Message"
+        rows="6"
+        required
+        className="w-full resize-none rounded-lg border border-white/10 bg-[#111] px-4 py-3 text-sm text-white outline-none placeholder:text-gray-500 focus:border-white/30"
+      ></textarea>
+    </div>
+
+    {/* BUTTON */}
+    <div className="flex justify-center pt-2">
+      <button
+        type="submit"
+        disabled={sending}
+        className="rounded-lg bg-[#292929] px-14 py-3 text-sm font-semibold text-white transition hover:bg-[#333] disabled:cursor-not-allowed disabled:opacity-50"
+      >
+        {sending ? "Sending..." : "Send Message"}
+      </button>
+    </div>
+
+    {/* STATUS */}
+    {status && (
+      <p className="text-center text-sm text-gray-400">
+        {status}
+      </p>
+    )}
+
+  </form>
 </div>
-          </form>
-
-        </div>
-
       </div>
     </section>
   );
