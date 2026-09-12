@@ -14,7 +14,7 @@ export default function Hero() {
     absolute
       left-[12%]
       top-[18%]
-      w-[35px]
+      w-[20px]
       opacity-[0.18]
       animate-float-slow
     "
@@ -28,7 +28,7 @@ export default function Hero() {
     absolute
       left-[42%]
       top-[78%]
-      w-[35px]
+      w-[20px]
       opacity-[0.18]
       animate-float-slow
     "
@@ -41,7 +41,7 @@ export default function Hero() {
       absolute
       right-[18%]
       top-[15%]
-      w-[35px]
+      w-[20px]
       opacity-[0.18]
       animate-float
     "
@@ -54,7 +54,7 @@ export default function Hero() {
       absolute
       left-[8%]
       bottom-[18%]
-      w-[35px]
+      w-[20px]
       opacity-[0.18]
       animate-float-reverse
     "
@@ -67,7 +67,7 @@ export default function Hero() {
       absolute
       right-[10%]
       bottom-[20%]
-      w-[35px]
+      w-[20px]
       opacity-[0.18]
       animate-float-slow
     "
@@ -79,7 +79,7 @@ export default function Hero() {
       absolute
       right-[38%]
       top-[10%]
-      w-[35px]
+      w-[20px]
       opacity-[0.15]
       animate-float
     "
@@ -92,7 +92,7 @@ export default function Hero() {
       absolute
       right-[32%]
       top-[40%]
-      w-[35px]
+      w-[20px]
       opacity-[0.15]
       animate-float
     "
@@ -105,7 +105,7 @@ export default function Hero() {
       absolute
       right-[68%]
       top-[50%]
-      w-[35px]
+      w-[20px]
       opacity-[0.15]
       animate-float
     "
@@ -118,7 +118,7 @@ export default function Hero() {
       absolute
       right-[48%]
       top-[35%]
-      w-[65px]
+      w-[20px]
       opacity-[0.15]
       animate-float
     "
