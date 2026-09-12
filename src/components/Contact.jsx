@@ -14,35 +14,42 @@ export default function Contact() {
     const [sending, setSending] = useState(false);
     const [status, setStatus] = useState("");
 
-    const sendEmail = (e) => {
-        e.preventDefault();
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-        setSending(true);
-        setStatus("");
+    setSending(true);
+    setStatus("");
 
-        emailjs
-            .sendForm(
-                "service_llt9aho",
-                "template_oeqweik",
-                form.current,
-                {
-                    publicKey: "L1G7Y4umRosJlSrtA",
-                }
-            )
-            .then(
-                () => {
-                    setSending(false);
-                    setStatus("Message sent successfully!");
-                    form.current.reset();
-                },
-                (error) => {
-                    setSending(false);
-                    setStatus("Failed to send message. Please try again.");
-                    console.error("EmailJS Error:", error);
-                }
-            );
-    };
+   
+    const timeInput = form.current.querySelector('input[name="time"]');
 
+    timeInput.value = new Date().toLocaleString("en-NG", {
+        dateStyle: "medium",
+        timeStyle: "short",
+    });
+
+    emailjs
+        .sendForm(
+            "service_llt9aho",
+            "template_oeqweik",
+            form.current,
+            {
+                publicKey: "L1G7Y4umRosJlSrtA",
+            }
+        )
+        .then(
+            () => {
+                setSending(false);
+                setStatus("Message sent successfully!");
+                form.current.reset();
+            },
+            (error) => {
+                setSending(false);
+                setStatus("Failed to send message. Please try again.");
+                console.error("EmailJS Error:", error);
+            }
+        );
+};
     return (
         <section
             id="contact"
