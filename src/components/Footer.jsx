@@ -90,7 +90,7 @@ export default function Footer() {
                             {/* LinkedIn */}
                             <li>
                                 <a
-                                    href="linkedin.com/in/adegboyega-philip-504517421"
+                                    href="https://linkedin.com/in/adegboyega-philip-504517421"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-sm text-gray-400 hover:text-white transition-colors"
