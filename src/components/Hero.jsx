@@ -22,7 +22,7 @@ export default function Hero() {
 
             
             <img
-                    src="/public/image/images (6).png"
+                    src="/image/images (6).png"
                     alt=""
                     className="
     absolute
@@ -35,7 +35,7 @@ export default function Hero() {
                 />
 
                 <img
-                    src="/public/image/images (8).png"
+                    src="/image/images (8).png"
                     alt=""
                     className="
       absolute
@@ -49,7 +49,7 @@ export default function Hero() {
 
                 {/* Node */}
                 <img
-                    src="/public/image/icons8-tailwind-css-48.png"
+                    src="/image/icons8-tailwind-css-48.png"
                     alt=""
                     className="
       absolute
@@ -63,7 +63,7 @@ export default function Hero() {
 
                 {/* HTML */}
                 <img
-                    src="/public/image/images (1).jfif"
+                    src="/image/images (1).jfif"
                     alt=""
                     className="
       absolute
@@ -77,7 +77,7 @@ export default function Hero() {
 
                 {/* CSS */}
                 <img
-                    src="/public/image/download (7).png"
+                    src="/image/download (7).png"
                     alt=""
                     className="
       absolute
@@ -90,7 +90,7 @@ export default function Hero() {
                 />
 
                 <img
-                    src="/public/image/download (6).png"
+                    src="/image/download (6).png"
                     alt=""
                     className="
       absolute
@@ -103,7 +103,7 @@ export default function Hero() {
                 />
 
                 <img
-                    src="/public/image/typescript.png"
+                    src="/image/typescript.png"
                     alt=""
                     className="
       absolute
@@ -116,7 +116,7 @@ export default function Hero() {
                 />
 
                 <img
-                    src="/public/image/icons8-javascript-48.png"
+                    src="/image/icons8-javascript-48.png"
                     alt=""
                     className="
       absolute

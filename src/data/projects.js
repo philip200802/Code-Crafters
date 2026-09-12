@@ -4,7 +4,7 @@ export const projects = [
     title: "Finvo Architechtural Solutions",
     description:
   "A robust invoicing and financial operations platform built for enterprises, streamlining billing, payment tracking, and revenue workflows at scale.",
-      image: "/public/image/finvo app.png",
+      image: "/image/finvo app.png",
     technologies: ["React", "TypeScript", "Bootsrap", "Mongo db", "Node.js", "Express.js"],
     liveUrl: "https://finvo-dun.vercel.app/",
     category: "Finance",
@@ -14,7 +14,7 @@ export const projects = [
     id: 2,
     title: "Echostream",
    description:
-  "A music streaming platform for listeners and artists, built to manage playback, uploads, discovery, and content moderation across the ecosystem.",    image: '/public/image/echo app.png',
+  "A music streaming platform for listeners and artists, built to manage playback, uploads, discovery, and content moderation across the ecosystem.",    image: '/image/echo app.png',
     technologies: [
       "React",
       "Typescript",
@@ -32,7 +32,7 @@ export const projects = [
     title: "Travel Space",
     description:
   "A tourism platform connecting travelers to destinations, tours, and local experiences, featuring dedicated interfaces for travelers, tour operators, and admins.",
-    image: "/public/image/travel space app.png",
+    image: "/image/travel space app.png",
     technologies: ["HTML",
       "CSS", "Javascript"
     ],
@@ -45,7 +45,7 @@ export const projects = [
     title: "Cloned App of Saatchi Art",
     description:
   "An art marketplace platform where artists list and sell original artwork, and collectors browse, discover, and purchase pieces across various styles and mediums.",
-    image: "/public/image/Screenshot 2025-12-06 120242.png",
+    image: "/image/Screenshot 2025-12-06 120242.png",
     technologies: ['HTML','CSS','Javascript'],
     liveUrl: "https://ass4-cli-117.vercel.app/",
     category: "Art",
