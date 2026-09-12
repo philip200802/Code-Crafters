@@ -6,10 +6,8 @@ export default function Projects() {
       id="projects"
       className="relative overflow-hidden bg-[#080808] px-6 py-[75px] sm:px-8 lg:px-[60px]"
     >
-      {/* ================= FLOATING TECH LOGOS ================= */}
       <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
 
-        {/* React */}
         <img
           src="/image/ion--logo-react.png"
           alt=""
@@ -22,9 +20,7 @@ export default function Projects() {
             animate-float-slow
           "
         />
-
-        {/* Node.js */}
-        <img
+   <img
           src="/image/node.png"
           alt=""
           className="
@@ -36,8 +32,6 @@ export default function Projects() {
             animate-float
           "
         />
-
-        {/* JavaScript */}
         <img
           src="/image/javascript.png"
           alt=""
@@ -52,11 +46,7 @@ export default function Projects() {
         />
 
       </div>
-
-      {/* ================= MAIN CONTENT ================= */}
       <div className="relative z-10 mx-auto max-w-[1165px]">
-
-        {/* ================= TITLE ================= */}
         <h2
           className="
             inline-block
@@ -73,8 +63,6 @@ export default function Projects() {
         >
           Selected Projects
         </h2>
-
-        {/* ================= PROJECT GRID ================= */}
         <div
           className="
             mt-[47px]
@@ -101,8 +89,6 @@ export default function Projects() {
                 hover:border-[#3a3a3a]
               "
             >
-
-              {/* ================= CATEGORY ================= */}
               <div className="mb-[12px]">
                 <span
                   className="
@@ -120,7 +106,6 @@ export default function Projects() {
                 </span>
               </div>
 
-              {/* ================= TITLE ================= */}
               <h3
                 className="
                   mb-[10px]
@@ -146,7 +131,7 @@ export default function Projects() {
                 {project.description}
               </p>
 
-              {/* ================= PROJECT IMAGE ================= */}
+
               <div
                 className="
                   mb-[16px]
@@ -189,7 +174,6 @@ export default function Projects() {
                 )}
               </div>
 
-              {/* ================= TECHNOLOGIES ================= */}
               <div className="mb-[17px] flex flex-wrap gap-[7px]">
                 {project.technologies.map((tech) => (
                   <span
@@ -208,8 +192,6 @@ export default function Projects() {
                   </span>
                 ))}
               </div>
-
-              {/* ================= LIVE PROJECT LINK ================= */}
               <div className="mt-auto">
 
                 <a

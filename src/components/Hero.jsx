@@ -20,8 +20,8 @@ export default function Hero() {
     "
                 />
 
-            
-            <img
+
+                <img
                     src="/image/images (6).png"
                     alt=""
                     className="
@@ -47,7 +47,6 @@ export default function Hero() {
     "
                 />
 
-                {/* Node */}
                 <img
                     src="/image/icons8-tailwind-css-48.png"
                     alt=""
@@ -61,7 +60,6 @@ export default function Hero() {
     "
                 />
 
-                {/* HTML */}
                 <img
                     src="/image/images (1).jfif"
                     alt=""
@@ -74,8 +72,6 @@ export default function Hero() {
       animate-float-slow
     "
                 />
-
-                {/* CSS */}
                 <img
                     src="/image/download (7).png"
                     alt=""
@@ -335,7 +331,7 @@ export default function Hero() {
     lg:flex
   "
                 >
-                    {/* GITHUB */}
+
                     <a
                         href="https://github.com/philip200802"
                         target="_blank"

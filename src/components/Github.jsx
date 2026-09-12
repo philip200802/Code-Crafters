@@ -14,14 +14,12 @@ export default function Github() {
   useEffect(() => {
     const getGithubStats = async () => {
       try {
-        // Get GitHub profile information
         const profileResponse = await fetch(
           `https://api.github.com/users/${username}`
         );
 
         const profile = await profileResponse.json();
-
-        // Get contribution information
+        
         const contributionResponse = await fetch(
           `https://github-contributions-api.jogruber.de/v4/${username}?y=last`
         );
@@ -49,17 +47,13 @@ export default function Github() {
     >
       <div className="mx-auto max-w-[1294px]">
 
-        {/* Heading */}
         <h2 className="mb-1 text-3xl font-bold text-white">
           Github Activity
         </h2>
 
         <div className="mb-6 h-[1px] w-20 bg-white"></div>
-
-        {/* Main Card */}
         <div className="rounded-xl border border-white/15 bg-[#090909] p-6">
 
-          {/* Profile */}
           <div className="mb-6 flex items-center gap-3">
             <div className="text-2xl text-white">
               ◉
@@ -75,10 +69,10 @@ export default function Github() {
             </p>
           </div>
 
-          {/* Main Content */}
+          
           <div className="flex flex-col gap-8 lg:flex-row">
 
-            {/* Contribution Calendar */}
+          
             <div className="min-w-0 flex-1 overflow-x-auto">
               <p className="mb-4 text-sm text-gray-400">
                 Contributions in the last year
@@ -93,10 +87,10 @@ export default function Github() {
               />
             </div>
 
-            {/* Statistics */}
+          
             <div className="grid min-w-[220px] grid-cols-2 gap-x-10 gap-y-6 lg:w-[250px]">
 
-              {/* Repositories */}
+          
               <div>
                 <p className="text-2xl font-bold text-white">
                   {stats.repositories}
@@ -107,7 +101,7 @@ export default function Github() {
                 </p>
               </div>
 
-              {/* Contributions */}
+          
               <div>
                 <p className="text-2xl font-bold text-white">
                   {stats.contributions}
@@ -118,7 +112,7 @@ export default function Github() {
                 </p>
               </div>
 
-              {/* Followers */}
+          
               <div>
                 <p className="text-2xl font-bold text-white">
                   {stats.followers}
@@ -129,7 +123,7 @@ export default function Github() {
                 </p>
               </div>
 
-              {/* Following */}
+          
               <div>
                 <p className="text-2xl font-bold text-white">
                   {stats.following}
@@ -143,7 +137,7 @@ export default function Github() {
             </div>
           </div>
 
-          {/* GitHub Profile */}
+          
           <a
             href={`https://github.com/${username}`}
             target="_blank"

@@ -4,7 +4,6 @@ export default function About() {
       id="about"
       className="relative overflow-hidden bg-[#080808] px-6 py-[70px] text-white sm:px-10 lg:px-[60px]"
     >
-      {/* ================= FLOATING TECH LOGOS ================= */}
      <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
 
   <img
@@ -20,7 +19,6 @@ export default function About() {
     "  
   />
 
-  {/* JavaScript */}
   <img
     src="/image/images (8).png"
     alt=""
@@ -34,7 +32,6 @@ export default function About() {
     "
   />
 
-  {/* Node */}
   <img
     src="/image/icons8-tailwind-css-48.png"
     alt=""
@@ -48,7 +45,7 @@ export default function About() {
     "
   />
 
-  {/* HTML */}
+
   <img
     src="/image/images (1).jfif"
     alt=""
@@ -62,7 +59,7 @@ export default function About() {
     "
   />
 
-  {/* CSS */}
+
   <img
     src="/image/download (7).png"
     alt=""
@@ -129,10 +126,10 @@ export default function About() {
   />
 </div>
 
-      {/* ================= MAIN CONTAINER ================= */}
+
       <div className="relative z-10 mx-auto max-w-[1165px]">
 
-        {/* ================= HEADING ================= */}
+
         <h2
           className="
             inline-block
@@ -150,7 +147,7 @@ export default function About() {
           About Me
         </h2>
 
-        {/* ================= CONTENT ================= */}
+
         <div
           className="
             mt-[40px]
@@ -162,10 +159,9 @@ export default function About() {
           "
         >
 
-          {/* ================= LEFT SIDE ================= */}
+
           <div className="pt-[28px]">
 
-            {/* FIRST PARAGRAPH */}
             <p
               className="
                 max-w-[515px]
@@ -182,7 +178,6 @@ export default function About() {
               architecture.
             </p>
 
-            {/* SECOND PARAGRAPH */}
             <p
               className="
                 mt-[16px]
@@ -199,7 +194,7 @@ export default function About() {
               community.
             </p>
 
-            {/* ================= TAGS ================= */}
+
             <div className="mt-[24px] flex gap-[10px]">
               <span
                 className="
@@ -247,7 +242,6 @@ export default function About() {
               </span>
             </div>
 
-            {/* ================= BOTTOM INFO ================= */}
             <div
               className="
                 mt-[24px]
@@ -260,7 +254,7 @@ export default function About() {
                 pt-[24px]
               "
             >
-              {/* LOCATION */}
+
               <div>
                 <p className="text-[12px] font-medium text-[#888888]">
                   Based In
@@ -271,7 +265,6 @@ export default function About() {
                 </p>
               </div>
 
-              {/* BUILDING SINCE */}
               <div
                 className="
                   rounded-[8px]
@@ -289,10 +282,8 @@ export default function About() {
             </div>
           </div>
 
-          {/* ================= RIGHT SIDE / IMAGE ================= */}
           <div className="relative">
 
-            {/* IMAGE */}
             <div
               className="
                 relative

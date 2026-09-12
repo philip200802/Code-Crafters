@@ -5,10 +5,10 @@ export default function Footer() {
         <footer className="bg-[#080808] text-white px-6 py-16 sm:px-8 lg:px-[60px]">
             <div className="max-w-[1240px] mx-auto">
 
-                {/* Footer Content */}
+                
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16 mb-12">
 
-                    {/* Brand */}
+                
                     <div>
                         <h3 className="text-lg font-bold mb-5">
                             Code Crafters
@@ -21,7 +21,7 @@ export default function Footer() {
                     </div>
 
 
-                    {/* Quick Links */}
+                
                     <div>
                         <h4 className="text-base font-semibold mb-5">
                             Quick Links
@@ -66,8 +66,6 @@ export default function Footer() {
                         </ul>
                     </div>
 
-
-                    {/* Connect */}
                     <div>
                         <h4 className="text-base font-semibold mb-5">
                             Connect
@@ -75,7 +73,7 @@ export default function Footer() {
 
                         <ul className="space-y-3">
 
-                            {/* GitHub */}
+
                             <li>
                                 <a
                                     href="https://github.com/philip200802"
@@ -87,7 +85,7 @@ export default function Footer() {
                                 </a>
                             </li>
 
-                            {/* LinkedIn */}
+                
                             <li>
                                 <a
                                     href="https://linkedin.com/in/adegboyega-philip-504517421"
@@ -99,7 +97,7 @@ export default function Footer() {
                                 </a>
                             </li>
 
-                            {/* Email */}
+                
                             <li>
                                 <a
                                     href="mailto:adegboyegaphilip6@gmail.com"
@@ -115,11 +113,10 @@ export default function Footer() {
                 </div>
 
 
-                {/* Divider */}
+ 
                 <div className="border-t border-white/10"></div>
 
 
-                {/* Copyright */}
                 <div className="pt-8">
                     <p className="text-center text-sm text-gray-400">
                         © {currentYear} Philip Adegboyega. All rights reserved.
