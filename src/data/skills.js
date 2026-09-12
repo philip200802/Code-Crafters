@@ -34,7 +34,7 @@ export const skills = {
   backend: [
     {
       name: "Node.js",
-            image: "//image/images (3).jfif"
+            image: "/image/images (3).jfif"
     },
     {
       name: "Express.js",
