@@ -191,7 +191,7 @@ export default function Hero() {
               sm:text-[21px]
             "
                     >
-                        Building scalable, high-performance applications
+                        Building scalable, high-performance applications 
                         <br className="hidden sm:block" />
                         with modern technologies.
                     </p>
