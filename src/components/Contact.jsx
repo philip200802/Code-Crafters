@@ -7,6 +7,7 @@ import {
     FaWhatsapp,
     FaEnvelope,
 } from "react-icons/fa";
+import FloatingIcons from "./FloatingIcons";
 
 export default function Contact() {
     const form = useRef();
@@ -55,6 +56,7 @@ export default function Contact() {
             id="contact"
             className="relative overflow-hidden bg-[#080808] px-6 py-[75px] text-white sm:px-8 lg:px-[60px]"
         >
+            <FloatingIcons />
             <div className="mx-auto max-w-[1045px]">
 
                 {/* HEADING */}

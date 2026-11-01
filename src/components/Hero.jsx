@@ -133,10 +133,11 @@ export default function Hero() {
           relative
           z-10
           mx-auto
-          min-h-screen
+          pb-[70px]
           max-w-[1294px]
           px-6
           sm:px-8
+          sm:pb-[85px]
         "
             >
 

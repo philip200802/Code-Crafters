@@ -1,11 +1,8 @@
-import { CiBrightnessDown } from "react-icons/ci";
-import{Link} from 'react-router-dom';
-
-
-const Navbar = () => {
+import { MdDarkMode, MdLightMode } from "react-icons/md";
+const Navbar = ({ isLight, onToggleTheme }) => {
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-[#050505] border-b border-white/10">
-      <div className="max-w-[1400px] mx-auto px-6 md:px-10 h-14 flex items-center justify-between">
+    <nav className="navbar-shell fixed top-0 left-0 w-full z-50 border-b border-white/10">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 md:px-10 h-14 flex items-center justify-between">
 
         
         <a
@@ -33,12 +30,20 @@ const Navbar = () => {
           </a>
 
           <a
-            href="#contact"
-            aria-label="Contact"
-            className="w-4 h-3 items-cemter"
+            href="#experience"
+            className="hidden text-[15px] text-white transition-colors hover:text-white/60 sm:inline"
           >
-           <CiBrightnessDown color="white" size={"20px"}/>
+            Experience
           </a>
+
+          <button
+            type="button"
+            onClick={onToggleTheme}
+            aria-label={`Switch to ${isLight ? 'dark' : 'light'} theme`}
+            className="flex h-9 w-9 items-center justify-center rounded-full text-white transition-colors hover:bg-white/10"
+          >
+            {isLight ? <MdDarkMode size="20px" /> : <MdLightMode size="20px" />}
+          </button>
 
         </div>
 

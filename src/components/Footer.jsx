@@ -1,9 +1,12 @@
+import FloatingIcons from "./FloatingIcons";
+
 export default function Footer() {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="bg-[#080808] text-white px-6 py-16 sm:px-8 lg:px-[60px]">
-            <div className="max-w-[1240px] mx-auto">
+        <footer className="relative overflow-hidden bg-[#080808] text-white px-6 py-16 sm:px-8 lg:px-[60px]">
+            <FloatingIcons />
+            <div className="relative z-10 max-w-[1240px] mx-auto">
 
                 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16 mb-12">
@@ -52,6 +55,15 @@ export default function Footer() {
                                     className="text-sm text-gray-400 hover:text-white transition-colors"
                                 >
                                     About
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    href="#experience"
+                                    className="text-sm text-gray-400 hover:text-white transition-colors"
+                                >
+                                    Experience
                                 </a>
                             </li>
 

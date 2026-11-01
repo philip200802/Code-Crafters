@@ -1,4 +1,5 @@
 import { skills } from "../data/skills";
+import FloatingIcons from "./FloatingIcons";
 
 export default function Skills() {
   const SkillCategory = ({ category, skills: skillList }) => (
@@ -48,6 +49,7 @@ export default function Skills() {
       id="skills"
       className="relative overflow-hidden bg-[#080808] px-6 py-20 sm:px-8 lg:px-12"
     >
+      <FloatingIcons />
       <div className="relative z-10 mx-auto max-w-[1165px]">
 
         <h2 className="text-4xl font-bold text-white">
